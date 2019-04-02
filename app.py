@@ -1,9 +1,6 @@
-
 from __future__ import print_function
 from flask import Flask, render_template, session, request, redirect, send_file
-from flask_cors import CORS
 app = Flask(__name__)
-CORS(app)
 import requests
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
